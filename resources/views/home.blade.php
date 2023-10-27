@@ -12,22 +12,19 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- style -->
+
     @vite('resources/js/app.js')
+
 
 </head>
 
-<body class="antialiased">
-
-    <header>
-        @include('layout.header')
-    </header>
-
-    
-    <h2>Ciao</h2>
+<body>
 
     <main>
         @include('layout.main')
     </main>
+
+
 </body>
 
 </html>

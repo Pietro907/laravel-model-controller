@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row flex_ctr">
+    <div class="row">
 
         @forelse ($movies as $movie)
         <div class="col-2">
