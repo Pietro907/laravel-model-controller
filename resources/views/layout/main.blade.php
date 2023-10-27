@@ -1,18 +1,24 @@
-
-@forelse ($movies as $movie)
 <div class="container">
-    <div class="row">
+    <div class="row flex_ctr">
+
+        @forelse ($movies as $movie)
         <div class="col-2">
             <div class="card">
 
-                <h6>Title: </h6>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                
+                <h6>Title: {{$movie->title}}</h6>
+
+                <p>{{$movie->original_titl}}</p>
+                <p>{{$movie->nazionality}}</p>
+                <p>{{$movie->date}}</p>
+                <p>{{$movie->vote}}</p>
+
             </div>
         </div>
+        @empty
+
+        <div class="col">
+            <h2>No Movies in the database! 😥</h2>
+        </div>
+        @endforelse
     </div>
 </div>
-@endforelse

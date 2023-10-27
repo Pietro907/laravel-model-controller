@@ -9,6 +9,6 @@ use \App\Models\Movie;
 class PageController extends Controller
 {
     public function index(){
-        return view('index', ['movies'=> Movie::all()]);
+        return view('layout.main', ['movies'=> Movie::all()]);
     }
 };
