@@ -20,9 +20,9 @@
 
 <body>
 
-    <main>
-        @include('layout.main')
-    </main>
+  
+    @yield('content')
+    
 
 
 </body>

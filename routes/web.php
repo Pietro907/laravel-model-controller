@@ -15,9 +15,9 @@ use App\Http\Controllers\Guest\PageController;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('home');
-});
+}); */
 
 /* Route::get('/', [PageController::class, 'index'])->name('layout.main'); */
 Route::get('/', [PageController::class, 'index'])->name('home');
