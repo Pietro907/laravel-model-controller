@@ -1,9 +1,12 @@
-@forelse ($movies as $movie)
-<div class="col-2">
-    <div class="card mt-5 text-danger">
+<h1 class="text-center text-danger pt-5">Film</h1>
 
-        <h6>Title: {{$movie->title}}</h6>
-        <img src="https://picsum.photos/400/200?random={{ $movie->id }}" class="card-img-top rounded-2 mb-3" alt="{{ $movie->original_title }}">
+@forelse ($movies as $movie)
+
+<div class="col-3 g-4">
+    <div class="card h-100 p-2 bg-dark text-white">
+
+        <h6 class="py-2">Title: {{$movie->title}}</h6>
+        <img src="https://picsum.photos/400/200?random={{ $movie->id }}" class="my-3" alt="{{ $movie->original_title }}">
         <p>{{$movie->original_title}}</p>
         <p>{{$movie->nazionality}}</p>
         <p>{{$movie->date}}</p>
